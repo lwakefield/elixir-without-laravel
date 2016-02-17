@@ -1,0 +1,31 @@
+$base_font: 'Lato', sans-serif;
+
+body {
+    font-family: $base_font;
+    font-size: 22px;
+    display: flex;
+    flex-flow: row-wrap;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+select,
+textarea {
+    font-family: $base_font;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+textarea {
+    min-height: 12rem;
+    resize: none;
+}
+
+.crypto-app {
+    display: flex;
+    flex-flow: column wrap;
+    max-width: 24rem;
+}
