@@ -58,7 +58,7 @@ All you need is ~~love~~ Node.js.
 To minify for production run:
 
 ```
-npm production
+npm run prod
 ```
 
 * * *

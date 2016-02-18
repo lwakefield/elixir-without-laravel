@@ -28,6 +28,6 @@
     },
     "scripts": {
         "start": "gulp watch",
-        "production": "gulp --production"
+        "prod": "gulp --production"
     }
 }
