@@ -1,0 +1,38 @@
+
+// The main document, every page on the site refers to this basic document
+
+*,
+*:before,
+*:after
+    box-sizing: border-box
+
+html
+    +bmp0
+    width: 100%
+    height: 100%
+
+body
+    +bmp0
+    display: flex
+    width: 100%
+    font-family: $base_font
+    font-size: 22px
+    flex-flow: row-wrap
+    justify-content: center
+
+img
+    -ms-interpolation-mode: bicubic
+
+h1
+    font-weight: bold
+    text-align: center
+
+select,
+textarea
+    font-family: $base_font
+    font-size: 2rem
+    margin: 1rem 0rem
+
+textarea
+    min-height: 12rem
+    resize: none

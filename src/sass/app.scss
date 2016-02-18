@@ -1,31 +1,18 @@
-$base_font: 'Lato', sans-serif;
+@charset "utf-8";             // Character type for the stylesheet
 
-body {
-    font-family: $base_font;
-    font-size: 22px;
-    display: flex;
-    flex-flow: row-wrap;
-    justify-content: center;
-}
+//font imports
+@import url('https://fonts.googleapis.com/css?family=Lato:300');
 
-h1 {
-    text-align: center;
-}
+//Stuff that goes at the start
+@import "_var.sass";          // Sass Variables and Mixins - Does not effect page, but other Sass files reference this file.
+@import "_meyer.sass";        // Resets browser defaults so browsers render pages the same. This is good for older browsers and fringe cases
+@import "_normalize.sass";    // Removes inconsistencies in the way different browsers render items by default. This is good for modern browsers and mobile.
 
-select,
-textarea {
-    font-family: $base_font;
-    font-size: 2rem;
-    margin: 1rem 0;
-}
+//Stuff that effects every page
+@import "_main.sass";         // Main CSS for the site. These are generic styles that effect every page
 
-textarea {
-    min-height: 12rem;
-    resize: none;
-}
+//Stuff that effects specific pages
+@import "_crypto.sass";       // Styles for the cryptographic widget
 
-.crypto-app {
-    display: flex;
-    flex-flow: column wrap;
-    max-width: 24rem;
-}
+//Stuff that goes at the end
+@import "_mediaqueries.sass"; // Adjusts the CSS of elements depending on browser or device resolution. Adaptive Web Design.
