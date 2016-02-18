@@ -7,7 +7,7 @@ The original post is [here](http://iamlawrence.me/laravel/2016/01/09/elixir-with
 
 The app itself is a hash digester written in Vue.js in *71 loc*, which I think is pretty neat in itself!
 
-![Hash Digester in Vue.js](https://i.imgur.com/bjOZf03.png)
+<p align="center"><a href="http://i.imgur.com/lHBUw0Q.png"><img src="http://i.imgur.com/lHBUw0Q.png" alt="Hash Digester in Vue.js"></a></p>
 
 The `gulpfile.js` has three tasks:
 
