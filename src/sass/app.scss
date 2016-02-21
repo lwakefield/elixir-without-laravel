@@ -2,9 +2,9 @@
 
 //font imports
 @import url('https://fonts.googleapis.com/css?family=Lato:300');
+$base_font: 'Lato', sans-serif;
 
 //Stuff that goes at the start
-@import "_var.sass";          // Sass Variables and Mixins - Does not effect page, but other Sass files reference this file.
 @import "_meyer.sass";        // Resets browser defaults so browsers render pages the same. This is good for older browsers and fringe cases
 @import "_normalize.sass";    // Removes inconsistencies in the way different browsers render items by default. This is good for modern browsers and mobile.
 
@@ -12,7 +12,5 @@
 @import "_main.sass";         // Main CSS for the site. These are generic styles that effect every page
 
 //Stuff that effects specific pages
-@import "_crypto.sass";       // Styles for the cryptographic widget
 
 //Stuff that goes at the end
-@import "_mediaqueries.sass"; // Adjusts the CSS of elements depending on browser or device resolution. Adaptive Web Design.
