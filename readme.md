@@ -28,8 +28,10 @@ npm start
 
 Then **[localhost:3000](http://localhost:3000)** should automatically launch.
 
-You may need to open `src/sass/app.scss` and save it once for gulp to kick on and process it for the first time.
+##### Notes:
 
+* You may need to open `src/sass/app.scss` and save it once for gulp to kick on and process it for the first time.
+* You can also run `gulp watch` instead of `npm start` (they do the same thing)
 
 * * *
 
@@ -55,11 +57,7 @@ All you need is ~~love~~ Node.js.
 
 ## Production
 
-To minify for production run:
-
-```
-npm run prod
-```
+To minify for production run either  **`npm run prod`** or **`gulp --production`** (they do the same thing).
 
 * * *
 
