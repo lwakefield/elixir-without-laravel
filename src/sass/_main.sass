@@ -1,0 +1,45 @@
+
+// The main document, every page on the site refers to this basic document
+
+*,
+*:before,
+*:after
+    box-sizing: border-box
+
+html,
+body
+    width: 100%
+    height: 100%
+    border: 0px
+    margin; 0px
+    padding: 0px
+
+body
+    display: flex
+    width: 100%
+    font-family: $base_font
+    font-size: 22px
+    flex-flow: row-wrap
+    justify-content: center
+
+img
+    -ms-interpolation-mode: bicubic
+
+h1
+    font-weight: bold
+    text-align: center
+
+select,
+textarea
+    margin: 1rem 0rem
+    font-family: $base_font
+    font-size: 2rem
+
+textarea
+    min-height: 12rem
+    resize: none
+
+.crypto-app
+    display: flex
+    max-width: 24rem
+    flex-flow: column wrap

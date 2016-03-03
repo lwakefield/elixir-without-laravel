@@ -1,17 +1,33 @@
 {
-  "name": "elixir-without-laravel",
-  "version": "1.0.0",
-  "description": "",
-  "main": "",
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "gulp": "^3.9.1",
-    "laravel-elixir": "^5.0.0"
-  },
-  "dependencies": {
-    "babel-preset-es2015": "^6.5.0",
-    "babel-preset-react": "^6.5.0",
-    "vue": "^1.0.16"
-  }
+    "name": "elixir-without-laravel",
+    "homepage": "http://iamlawrence.me/laravel/2016/01/09/elixir-without-laravel.html",
+    "version": "1.0.0",
+    "author": "Lawrence Wakefield",
+    "description": "Elixir Without Laravel demo app.",
+    "keywords": [ "Elixir", "Gulp", "scaffold" ],
+    "maintainers":[{
+        "name": "Lawrence Wakefield",
+        "email": "lwakefield@users.noreply.github.com",
+        "web": "http://http://iamlawrence.me"
+    }],
+    "repository": [{
+        "type": "git",
+        "url": "git://github.com/lwakefield/elixir-without-laravel.git"
+    }],
+    "bugs": "https://github.com/lwakefield/elixir-without-laravel/issues",
+    "license": "ISC",
+    "main": "index.html",
+    "dependencies": {
+        "babel-preset-es2015": "^6.5.0",
+        "babel-preset-react": "^6.5.0",
+        "vue": "^1.0.16"
+    },
+    "devDependencies": {
+        "gulp": "^3.9.1",
+        "laravel-elixir": "^5.0.0"
+    },
+    "scripts": {
+        "start": "gulp watch",
+        "prod": "gulp --production"
+    }
 }

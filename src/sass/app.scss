@@ -1,31 +1,16 @@
+@charset "utf-8";             // Character type for the stylesheet
+
+//font imports
+@import url('https://fonts.googleapis.com/css?family=Lato:300');
 $base_font: 'Lato', sans-serif;
 
-body {
-    font-family: $base_font;
-    font-size: 22px;
-    display: flex;
-    flex-flow: row-wrap;
-    justify-content: center;
-}
+//Stuff that goes at the start
+@import "_meyer.sass";        // Resets browser defaults so browsers render pages the same. This is good for older browsers and fringe cases
+@import "_normalize.sass";    // Removes inconsistencies in the way different browsers render items by default. This is good for modern browsers and mobile.
 
-h1 {
-    text-align: center;
-}
+//Stuff that effects every page
+@import "_main.sass";         // Main CSS for the site. These are generic styles that effect every page
 
-select,
-textarea {
-    font-family: $base_font;
-    font-size: 2rem;
-    margin: 1rem 0;
-}
+//Stuff that effects specific pages
 
-textarea {
-    min-height: 12rem;
-    resize: none;
-}
-
-.crypto-app {
-    display: flex;
-    flex-flow: column wrap;
-    max-width: 24rem;
-}
+//Stuff that goes at the end
